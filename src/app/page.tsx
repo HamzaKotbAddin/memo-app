@@ -1,3 +1,26 @@
+import { Calendar, CheckSquare, FileText } from "lucide-react";
+
+const tabs = [
+  {
+    id: "memo" as const,
+    label: "Memo",
+    icon: FileText,
+    // count: memos.length,
+  },
+  {
+    id: "task" as const,
+    label: "Task",
+    icon: CheckSquare,
+    // count: tasks.filter((t) => !t.completed).length,
+  },
+  {
+    id: "deadlines" as const,
+    label: "Deadlines",
+    icon: Calendar,
+    // count: deadlines.length,
+  },
+];
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
